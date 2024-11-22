@@ -35,6 +35,8 @@ You are given a table `customer` that holds customers' information along with th
 - Customers Alex and Mark were referred by the customer with `id = 2`, so they are excluded from the result.
 - The query should include customers who have `NULL` as their `referee_id` or those who were referred by someone other than `id = 2`.
 
+  ## Solve the Question on [Leetcode.com](https://leetcode.com/problems/find-customer-referee/?envType=study-plan-v2&envId=top-sql-50)
+
 ---
 
 ## Solution
