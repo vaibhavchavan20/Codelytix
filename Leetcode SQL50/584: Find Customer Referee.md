@@ -39,8 +39,18 @@ You are given a table `customer` that holds customers' information along with th
 
 ## Solution
 
-### SQL Query
+### Solution to this question can be done in 2 ways.
+
+### By using Simple SQL Query with OR logic
 ```sql
 SELECT name
 FROM customer
 WHERE referee_id <> 2 OR referee_id IS NULL;
+```
+
+### 2. By using COALESCE() Function
+```sql
+SELECT name
+FROM customer
+WHERE COALESCE(referee_id,'') != 2;
+```
